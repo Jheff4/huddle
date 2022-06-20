@@ -28,7 +28,7 @@ body {
   border: none;
   border-radius: 20px;
   background-color: white;
-  font-size: 16px;
+  font-size: 14px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -44,14 +44,14 @@ body {
   margin-left: 70px;
   margin-right: 70px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 40px;
   font-family: 'Poppins', sans-serif;
 }
 
 .message {
    margin: 30px 37px;
-   font-size: 19px;
+   font-size: 16px;
    text-align: center;
    line-height: 30px;
    font-weight: 400;
@@ -66,7 +66,16 @@ body {
   background-color: hsl(322, 100%, 66%);
   border-radius: 30px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+.get-started:hover {
+  cursor: pointer;
+}
+
+.get-started:active {
+  opacity: 0.8;
+  transition: opacity 0.15s;
 }
 
 .mockup {
@@ -74,7 +83,7 @@ body {
 }
 
 .mockup-pic {
-  width: 450px;
+  width: 400px;
   margin-bottom: 50px;
 }
 
@@ -104,11 +113,11 @@ body {
 
 .grow-heading, .flow-heading, .user-heading {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .grow-message, .flow-message, .user-message {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   line-height: 25px;
   font-weight: 400;
@@ -117,8 +126,6 @@ body {
 }
 
 .float-cont {
-  margin-left: -70px;
-  margin-right: 20px;
   text-align: center;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
   padding-top: 55px;
@@ -130,7 +137,8 @@ body {
   margin-top: -150px;
   display: flex;
   flex-direction: column;
-  left: 30%;
+  width: 75%;
+  left: 12.5%;
 }
 
 .ready {
@@ -151,10 +159,20 @@ body {
   box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.13);
 }
 
+.get-started-2:hover {
+  cursor: pointer;
+}
+
+.get-started-2:active {
+  opacity: 0.8;
+  transition: opacity 0.15s;
+}
+
 footer {
   background-color: hsl(192, 95%, 16%);
   color: white;
   padding-top: 180px;
+  padding-bottom: 70px;
   padding-left: 25px;
   padding-right: 25px;
   position: relative;
@@ -173,7 +191,7 @@ footer {
 }
 
 .address {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: none;
   line-height: 35px;
 }
@@ -191,36 +209,39 @@ footer {
 
 .phone-icon {
   width: 23px;
-  margin: 4px 0;
   margin-right: 39px;
 }
 
 .number {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .email-add {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .email-icon {
   width: 25px;
-  margin-top: 6px;
-  margin-bottom: 2px;
   margin-right: 34px;
+  margin-top: 3px;
 }
  
 .part-1 {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
-.about-us, .what-we-do, .faq, .career, .blog, .contact-us {
-  font-size: 22px;
+.about-us, .what-we-do, .faq {
+  font-size: 19px;
   margin-bottom: 25px;
 }
 
-.part-2 {
-  margin-bottom: 70px;
+.career, .blog, .contact-us {
+  font-size: 19px;
+  margin-bottom: 25px;
+}
+
+.part-4 {
+  margin-bottom: 60px;
 }
 
 .fb, .twitter, .ig {
@@ -235,11 +256,14 @@ footer {
 
 .part-3 {
   text-align: center;
-  font-size: 13px;
-  padding-bottom: 80px;
 }
 
-@media (min-width: 1100px) {
+.copyright {
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (min-width: 1050px) {
   .container-1 {
     background-image: url('images/bg-hero-desktop.svg');
     background-repeat: no-repeat;
@@ -264,7 +288,7 @@ footer {
     text-align: start;
     margin-left: 60px;
     margin-right: 40px;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 20px;
     line-height: 25px;
   }
@@ -279,6 +303,7 @@ footer {
     margin-bottom: 40px;
     padding: 15px 55px;
     font-size: 12px;
+    
   }
 
   .mockup-pic {
@@ -330,7 +355,8 @@ footer {
     text-align: left;
     line-height: 20px;
     padding-top: 15px;
-    margin-right: 25px;
+    margin-right: 15px;
+    padding-right: 90px;
   }
 
   .flow-message {
@@ -354,11 +380,61 @@ footer {
   .parent-flow {
     margin-left: 100px;
     margin-right: -35px;
+    padding-left: 40px;
   }
 
   .address, .number, .email-add {
-    font-size: 14px;
+    font-size: 16px;
     display: inline;
     width: 300px;
+  }
+
+  .float-cont {
+    width: 50%;
+    left: 25%;
+    padding-bottom: 15px;
+    border-radius: 10px;
+  }
+
+  footer {
+    padding-top: 150px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 55px;
+  }
+
+  .logo-2 {
+    width: 230px;
+  }
+
+  .phone-icon, .email-icon, .location-icon {
+    margin-right: 20px;
+  }
+
+  .about-us, .what-we-do, .faq {
+    font-size: 17px;
+  }
+  
+  .career, .blog, .contact-us {
+    font-size: 17px;
+  }
+
+  .fb, .twitter, .ig {
+    width: 27px;
+  }
+
+  .footer-gen {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 120px;
+  }
+
+  .copyright {
+    text-align: right;
+    font-size: 12px;
+  }
+
+  .part-1 {
+    margin-bottom: 10px;
   }
 }
